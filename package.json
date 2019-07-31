@@ -1,0 +1,41 @@
+{
+  "name": "webpack-api-boilerplate",
+  "version": "1.1.0",
+  "description": "A Node.js starter using Serverless and GraphQL",
+  "main": "handler.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js",
+    "build": "webpack",
+    "offline": "sls offline"
+  },
+  "author": "Sean Kerr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/theonlysean/webpack-api-boilerplate.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-source-map-support": "^1.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "chai": "^4.2.0",
+    "jest": "^21.2.1",
+    "mocha": "^6.2.0",
+    "serverless-offline": "^3.20.3",
+    "serverless-webpack": "^5.1.0",
+    "supertest": "^4.0.2",
+    "webpack": "^4.2.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "apollo-server-lambda": "^2.8.0",
+    "babel-runtime": "^6.26.0",
+    "graphql": "^14.4.2",
+    "source-map-support": "^0.4.18"
+  }
+}

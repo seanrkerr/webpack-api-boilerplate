@@ -1,0 +1,25 @@
+service: serverless-nodejs-starter
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpack:
+    webpackConfig: ./webpack.config.js
+    includeModules: true
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  #environment: ${file(env.yml):${self:provider.stage}}
+
+functions:
+  hello:
+    handler: getHandler.hello
+    events:
+      - http:
+          path: hello
+          method: get
